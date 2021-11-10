@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        button {
+            font-size: 40px;
+        }
+
+        h1 {
+            font-family: arial;
+            font-size: 80px;
+            transition: 1s linear;
+            margin: 30vh;
+        }
+
+        /* button.larger:hover~h1{
+            font-size: 160px;
+            margin:30vh 0;
+        }
+        button.smaller:hover~h1{
+            font-size: 40px;
+        }
+        button.border:hover~h1{
+            border: 2px solid black;
+        } */
+
+        h1.duzy{
+            font-size: 160px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button class="larger">2xWiększy</button>
+    <button class="smaller">2xMniejszy</button>
+    <button class="border">Obramowanie</button>
+    <h1>Nazwa</h1>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $('button.larger').click(function() {
+            $('h1').toggleClass("duzy");
+
+        })
+    </script>
+</body>
+
+</html>

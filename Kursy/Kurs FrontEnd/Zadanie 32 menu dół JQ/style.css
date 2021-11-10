@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 10px 70px;
+    height: 150vh;
+}
+
+article p {
+    font-size: 20px;
+    line-height: 50px;
+    z-index: 1;
+}
+
+div.arrow {
+    position: fixed;
+    font-size: 40px;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 1;
+}
+
+.arrow.on {
+    color: white;
+    transform: rotate(180deg);
+}
+
+nav {
+    position: fixed;
+    bottom: -27vh;
+    left: 0;
+    height: 30vh;
+    width: 100%;
+    background-color: #000;
+    transform: .5s;
+}
+
+nav.on {
+    bottom: 0;
+}

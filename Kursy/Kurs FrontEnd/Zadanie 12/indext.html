@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przycisk</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            position: relative;
+            padding: 10px 25px;
+            font-size: 40px;
+            margin:100px;
+            border-style: none;
+            background-color: #fff;
+            overflow: hidden;
+        }
+        button:hover span {
+            left: 0;;
+        }
+
+        span{
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: black;
+            bottom: 2px;
+            left: -100%;
+            transition: .4s;
+        }
+    </style>
+</head>
+<body>
+    <button>Przycisk<span></span></button>
+</body>
+</html>
